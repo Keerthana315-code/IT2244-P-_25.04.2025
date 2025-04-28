@@ -1,0 +1,126 @@
+Print multiplication table using for loop
+1*2=2
+2*2=4
+.......
+
+
+echo "Enter the number to display the multiplecation table:"
+read num
+for i in {2..10}
+do
+echo "$num $i = $((num*i))"
+done
+
+
+
+
+
+
+
+
+
+check if a file exitsts
+output:
+
+
+
+
+
+filename="/home/user/nonexistent.txt"
+File '/home/user/nonexistent.txt' does not exist.
+
+using a while loop to read a file line by line
+output:
+Number of .txt files:3
+
+
+if[-z "$1"]; then
+echo "Usage : $0<file_name>"
+exit 1
+fi
+
+while IFS = read -r line
+do 
+echo "$line"
+done <"$1"
+
+
+
+					*
+				*	*	*
+			*	*	*	*	*
+		*	*	*	*	*	*	*
+	*	*	*	*	*	*	*	*	*
+		*	*	*	*	*	*	*
+			*	*	*	*	*
+				*	*	*
+					*
+
+//top
+rows=5
+for ((i=1;i<rows;i++))
+do
+for((j=1;j<rows;j++))
+do
+echo -n " "
+done
+for((k=1;k<=((2*i-1));k++))
+do
+echo -n "*"
+done 
+echo 
+done
+
+
+//bottom
+for((i=rows-1;i>=1;i--))
+do
+for((j=rows;j>i;j--))
+do
+echo -n " "
+done
+for((k=1;k<=((2*i-1));k++))
+do
+echo -n "*"
+done 
+echo 
+done
+
+
+
+
+
+let number
+echo "Enter the fibbonacci number:"
+read number
+a=0
+b=1
+for((i=0;i<number;i++))
+do
+echo $a
+c=$(($a+$b))
+a=$b
+b=$c
+done
+c=$(($c-1))
+
+echo $c
+
+
+
+
+
+for((i=1;i<=5;i++))
+do
+echo "*"
+done
+for((j=i;j<=5;j++))
+do 
+echo -n " "
+done 
+
+
+
+
+
+	
